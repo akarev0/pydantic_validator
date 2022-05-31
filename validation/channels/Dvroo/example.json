@@ -1,0 +1,518 @@
+{
+    "name": "site-234 menu",
+    "menu": {
+        "mealtimes": [
+            {
+                "id": "breakfast-menu",
+                "name": {
+                    "en": "Breafast menu"
+                },
+                "description": {
+                    "en": "Best breakfast menu in town! Everything on the menu is freshly made at the start of the day."
+                },
+                "seo_description": {
+                    "en": "Best breakfast menu in town!"
+                },
+                "image": {
+                    "url": ""
+                },
+                "category_ids": [
+                    "breakfast-bundle",
+                    "porridge",
+                    "drinks"
+                ],
+                "schedule": [
+                    {
+                        "day_of_week": 0,
+                        "time_periods": [
+                            {
+                                "start": "00:00:00",
+                                "end": "10:29:00"
+                            }
+                        ]
+                    },
+                    {
+                        "day_of_week": 1,
+                        "time_periods": [
+                            {
+                                "start": "00:00:00",
+                                "end": "10:29:00"
+                            }
+                        ]
+                    },
+                    {
+                        "day_of_week": 2,
+                        "time_periods": [
+                            {
+                                "start": "00:00:00",
+                                "end": "10:29:00"
+                            }
+                        ]
+                    },
+                    {
+                        "day_of_week": 3,
+                        "time_periods": [
+                            {
+                                "start": "00:00:00",
+                                "end": "10:29:00"
+                            }
+                        ]
+                    },
+                    {
+                        "day_of_week": 4,
+                        "time_periods": [
+                            {
+                                "start": "00:00:00",
+                                "end": "10:29:00"
+                            }
+                        ]
+                    },
+                    {
+                        "day_of_week": 5,
+                        "time_periods": [
+                            {
+                                "start": "00:00:00",
+                                "end": "10:29:00"
+                            }
+                        ]
+                    },
+                    {
+                        "day_of_week": 6,
+                        "time_periods": [
+                            {
+                                "start": "00:00:00",
+                                "end": "10:29:00"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "categories": [
+            {
+                "id": "porridge",
+                "name": {
+                    "en": "Porridge 🥣"
+                },
+                "description": {
+                    "en": "Freshly made porridge"
+                },
+                "item_ids": [
+                    "porridge_blueberries",
+                    "porridge_banana"
+                ]
+            },
+            {
+                "id": "drinks",
+                "name": {
+                    "en": "Drinks ☕️"
+                },
+                "description": {},
+                "item_ids": [
+                    "tea",
+                    "coffee",
+                    "orange_juice"
+                ]
+            },
+            {
+                "id": "breakfast-bundle",
+                "name": {
+                    "en": "Breakfast bundle 📦"
+                },
+                "description": {},
+                "item_ids": [
+                    "breakfast-bundle"
+                ]
+            }
+        ],
+        "items": [
+            {
+                "id": "porridge_blueberries",
+                "name": {
+                    "en": "Porridge with blueberries"
+                },
+                "description": {
+                    "en": "Porridge with blueberries and cinammon"
+                },
+                "price_info": {
+                    "price": 350,
+                    "overrides": [
+                        {
+                            "type": "ITEM",
+                            "id": "breakfast-bundle",
+                            "price": 0
+                        }
+                    ]
+                },
+                "plu": "porridge_blueberries123",
+                "ian": "4006381333931",
+                "image": {},
+                "is_eligible_as_replacement": true,
+                "is_eligible_for_substitution": true,
+                "tax_rate": 20.0,
+                "modifier_ids": [
+                    "extra_toppings"
+                ],
+                "allergies": [
+                    "milk"
+                ],
+                "nutritional_info": {
+                    "energy_kcal": {
+                        "low": 123,
+                        "high": 456
+                    }
+                },
+                "contains_alcohol": false,
+                "max_quantity": 2
+            },
+            {
+                "id": "porridge_banana",
+                "name": {
+                    "en": "Porridge with bananas"
+                },
+                "operational_name": "porridge-ban",
+                "description": {
+                    "en": "Porridge with bananas and cinammon"
+                },
+                "price_info": {
+                    "price": 350,
+                    "overrides": [
+                        {
+                            "type": "ITEM",
+                            "id": "breakfast-bundle",
+                            "price": 0
+                        }
+                    ]
+                },
+                "plu": "porridge_banana123",
+                "ian": "4006381333932",
+                "image": {},
+                "is_eligible_as_replacement": false,
+                "is_eligible_for_substitution": true,
+                "tax_rate": 20.0,
+                "modifier_ids": [
+                    "extra_toppings"
+                ],
+                "allergies": [
+                    "milk"
+                ],
+                "nutritional_info": {},
+                "contains_alcohol": false,
+                "max_quantity": 2
+            },
+            {
+                "id": "peanut_butter",
+                "name": {
+                    "en": "Peanut butter"
+                },
+                "operational_name": "peanut-butter",
+                "description": {
+                    "en": "Crunchy peanut butter"
+                },
+                "price_info": {
+                    "price": 100,
+                    "overrides": []
+                },
+                "plu": "peanut_butter_123",
+                "ian": "4006381333933",
+                "image": {},
+                "is_eligible_as_replacement": true,
+                "is_eligible_for_substitution": false,
+                "tax_rate": 20.0,
+                "modifier_ids": [],
+                "allergies": [
+                    "peanuts"
+                ],
+                "nutritional_info": {},
+                "contains_alcohol": false,
+                "max_quantity": 2
+            },
+            {
+                "id": "granola",
+                "name": {
+                    "en": "Granola"
+                },
+                "operational_name": "granola",
+                "description": {
+                    "en": "Granola"
+                },
+                "price_info": {
+                    "price": 100,
+                    "overrides": []
+                },
+                "plu": "granola_123",
+                "ian": "4006381333934",
+                "image": {},
+                "is_eligible_as_replacement": false,
+                "is_eligible_for_substitution": false,
+                "tax_rate": 20.0,
+                "modifier_ids": [],
+                "allergies": [],
+                "nutritional_info": {},
+                "contains_alcohol": false,
+                "max_quantity": 2
+            },
+            {
+                "id": "honey",
+                "name": {
+                    "en": "Honey"
+                },
+                "operational_name": "honey",
+                "description": {
+                    "en": "Honey"
+                },
+                "price_info": {
+                    "price": 0,
+                    "overrides": []
+                },
+                "plu": "honey_123",
+                "ian": "4006381333935",
+                "image": {},
+                "is_eligible_as_replacement": false,
+                "is_eligible_for_substitution": true,
+                "tax_rate": 20.0,
+                "modifier_ids": [],
+                "allergies": [],
+                "nutritional_info": {},
+                "contains_alcohol": false
+            },
+            {
+                "id": "tea",
+                "name": {
+                    "en": "Tea"
+                },
+                "operational_name": "tea",
+                "description": {},
+                "price_info": {
+                    "price": 150,
+                    "overrides": [
+                        {
+                            "type": "ITEM",
+                            "id": "breakfast-bundle",
+                            "price": 0
+                        }
+                    ]
+                },
+                "plu": "tea_$23",
+                "ian": "4006381333936",
+                "image": {},
+                "is_eligible_as_replacement": true,
+                "is_eligible_for_substitution": true,
+                "tax_rate": 20.0,
+                "modifier_ids": [
+                    "choose_milk"
+                ],
+                "allergies": [],
+                "nutritional_info": {},
+                "contains_alcohol": false,
+                "max_quantity": 4
+            },
+            {
+                "id": "coffee",
+                "name": {
+                    "en": "Coffee"
+                },
+                "operational_name": "coffee",
+                "description": {},
+                "price_info": {
+                    "price": 250,
+                    "overrides": [
+                        {
+                            "type": "ITEM",
+                            "id": "breakfast-bundle",
+                            "price": 0
+                        }
+                    ]
+                },
+                "plu": "coffee_$78",
+                "ian": "4006381333937",
+                "image": {},
+                "is_eligible_as_replacement": true,
+                "is_eligible_for_substitution": true,
+                "tax_rate": 20.0,
+                "modifier_ids": [
+                    "choose_milk"
+                ],
+                "allergies": [],
+                "nutritional_info": {},
+                "contains_alcohol": false,
+                "max_quantity": 2
+            },
+            {
+                "id": "no_milk",
+                "name": {
+                    "en": "No milk"
+                },
+                "operational_name": "no-milk",
+                "description": {
+                    "en": ""
+                },
+                "price_info": {
+                    "price": 0,
+                    "overrides": []
+                },
+                "plu": "no_milk_$49",
+                "ian": "4006381333938",
+                "image": {},
+                "is_eligible_as_replacement": true,
+                "is_eligible_for_substitution": true,
+                "tax_rate": 20.0,
+                "modifier_ids": [],
+                "allergies": [],
+                "nutritional_info": {},
+                "contains_alcohol": false,
+                "max_quantity": 2
+            },
+            {
+                "id": "whole_milk",
+                "name": {
+                    "en": "Whole milk"
+                },
+                "operational_name": "whole-milk",
+                "description": {
+                    "en": ""
+                },
+                "price_info": {
+                    "price": 0,
+                    "overrides": []
+                },
+                "plu": "whole_milk_$39",
+                "ian": "4006381333939",
+                "image": {},
+                "is_eligible_as_replacement": true,
+                "is_eligible_for_substitution": true,
+                "tax_rate": 20.0,
+                "modifier_ids": [],
+                "allergies": [],
+                "nutritional_info": {},
+                "contains_alcohol": false
+            },
+            {
+                "id": "orange_juice",
+                "name": {
+                    "en": "Orange juice"
+                },
+                "operational_name": "orange-juice",
+                "description": {},
+                "price_info": {
+                    "price": 250,
+                    "overrides": [
+                        {
+                            "type": "ITEM",
+                            "id": "breakfast-bundle",
+                            "price": 0
+                        }
+                    ]
+                },
+                "plu": "orange_juice_$69",
+                "ian": "4006381333940",
+                "image": {},
+                "is_eligible_as_replacement": true,
+                "is_eligible_for_substitution": true,
+                "tax_rate": 20.0,
+                "modifier_ids": [],
+                "allergies": [],
+                "nutritional_info": {},
+                "contains_alcohol": false
+            },
+            {
+                "id": "breakfast-bundle",
+                "name": {
+                    "en": "Breakfast bundle"
+                },
+                "description": {
+                    "en": "Porridge with a drink of your choice."
+                },
+                "price_info": {
+                    "price": 450,
+                    "overrides": []
+                },
+                "plu": "breakfast_bundle123",
+                "ian": "4006381333941",
+                "image": {},
+                "is_eligible_as_replacement": true,
+                "is_eligible_for_substitution": true,
+                "tax_rate": 20.0,
+                "modifier_ids": [
+                    "choose_your_porridge",
+                    "choose_your_drink"
+                ],
+                "allergies": [],
+                "nutritional_info": {},
+                "contains_alcohol": false
+            }
+        ],
+        "modifiers": [
+            {
+                "id": "extra_toppings",
+                "name": {
+                    "en": "Choice of extra toppings 🍯"
+                },
+                "description": {
+                    "en": ""
+                },
+                "min_selection": 0,
+                "max_selection": 3,
+                "repeatable": false,
+                "item_ids": [
+                    "honey",
+                    "peanut_butter",
+                    "granola"
+                ]
+            },
+            {
+                "id": "choose_milk",
+                "name": {
+                    "en": "Choose milk"
+                },
+                "description": {
+                    "en": ""
+                },
+                "min_selection": 0,
+                "max_selection": 1,
+                "repeatable": true,
+                "item_ids": [
+                    "no_milk",
+                    "whole_milk"
+                ]
+            },
+            {
+                "id": "choose_your_porridge",
+                "name": {
+                    "en": "Choose your porridge"
+                },
+                "description": {
+                    "en": ""
+                },
+                "min_selection": 0,
+                "max_selection": 1,
+                "repeatable": true,
+                "item_ids": [
+                    "porridge_blueberries",
+                    "porridge_banana"
+                ]
+            },
+            {
+                "id": "choose_your_drink",
+                "name": {
+                    "en": "Choose your drink"
+                },
+                "description": {
+                    "en": ""
+                },
+                "min_selection": 0,
+                "max_selection": 1,
+                "repeatable": true,
+                "item_ids": [
+                    "tea",
+                    "coffee",
+                    "orange_juice"
+                ]
+            }
+        ]
+    },
+    "site_ids": [
+        "site-234",
+        "site-456"
+    ]
+}

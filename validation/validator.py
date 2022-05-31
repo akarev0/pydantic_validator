@@ -1,4 +1,3 @@
-from typing import Union
 from pydantic import BaseModel, ValidationError
 from .model import ErrorSerializer
 

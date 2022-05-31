@@ -1,3 +1,22 @@
+"""
+The concept how validation errors should be grouped and shown on FE.
+
+{
+    "menuValidationErrors": {
+        "categories": [
+            {
+                "itemName": "Porridge with blueberries and cinnamon",
+                "itemIndex": 0,
+                "errorMessage": "length should be more that 0 and less than 50"
+
+            }
+        ]
+    }
+
+}
+"""
+
+
 from pydantic import (
     BaseModel,
     Field,
@@ -17,12 +36,11 @@ class ErrorData(NamedTuple):
 ErrorLocationModel = create_model_from_namedtuple(ErrorData)
 
 
-class PyValidationError(BaseModel):
+class MenuValidationError(BaseModel):
     """Wrapper for Pydantic ValidationError."""
 
     errorInfo: tuple = Field(alias="loc")
     errorMessage: str = Field(alias="msg")
-    type: str
 
     @validator("errorInfo")
     def _loc(cls, value):
@@ -36,7 +54,7 @@ class PyValidationError(BaseModel):
 class ErrorSerializer(BaseModel):
     """Build a user-friendly errors list."""
 
-    errors: List[PyValidationError]
+    errors: List[MenuValidationError]
 
 
 class ChannelMenuCategory(BaseModel):

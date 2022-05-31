@@ -1,24 +1,17 @@
+import json
 from validation.model import ChannelMenu
 from validation.validator import MenuValidator
+from validation.channels.Dvroo.models import DVRoMenu
 
 
-data = {
-    "categories": [
-        {
-            "id": 1,
-            "name": "",
-        }
-    ],
-    "products": [
-        {
-            "plu": "sdfsdfsdfsfdsdfsdfsfdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdf",
-            "price": -1,
-        }
-    ],
-}
+import pathlib
+from os.path import dirname, realpath
 
 
-# if __name__ == "__main__":
+path = pathlib.PurePath(dirname(realpath(__file__)))
 
-r = MenuValidator.validate(model=ChannelMenu, menuData=data)
+with open(path.joinpath("validation", "channels", "Dvroo", "example.json")) as file:
+    data = json.load(file)
+
+r = MenuValidator.validate(model=DVRoMenu, menuData=data)
 print(r)
